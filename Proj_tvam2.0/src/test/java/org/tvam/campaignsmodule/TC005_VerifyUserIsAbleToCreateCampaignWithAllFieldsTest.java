@@ -16,7 +16,7 @@ import org.tvam.objectrepository.DashboardPage;
 
 public class TC005_VerifyUserIsAbleToCreateCampaignWithAllFieldsTest extends BaseClass {
 
-	@Test (groups = "smoke")
+	@Test
 	public void tc004_VerifyUserIsAbleToCreateCampaignWithAllFieldsTest() throws IOException, InterruptedException {
 		
 		// read data excel file and store it
@@ -37,9 +37,7 @@ public class TC005_VerifyUserIsAbleToCreateCampaignWithAllFieldsTest extends Bas
 		createCampaignPage.getCampaignNameTextField().sendKeys(CAMPAIGNNAME);
 		createCampaignPage.getTargetSizeTextField().sendKeys(TARGETSIZE);
 		createCampaignPage.getCreateCampaignButton().submit();
-		
-		Thread.sleep(500);
-		
+			
 		//WebDriverUtility - generic utility
 		wUtil.toMoveToElement(driver, dashboardPage.getToastMessageText());
 		
