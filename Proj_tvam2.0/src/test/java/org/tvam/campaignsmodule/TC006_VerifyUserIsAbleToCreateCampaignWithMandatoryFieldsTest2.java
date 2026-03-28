@@ -53,11 +53,3 @@ public class TC006_VerifyUserIsAbleToCreateCampaignWithMandatoryFieldsTest2 exte
 		
 	}
 }
-
-
-
-
-
-
-
-
